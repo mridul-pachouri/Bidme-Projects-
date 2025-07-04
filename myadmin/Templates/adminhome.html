@@ -1,0 +1,32 @@
+{% extends 'master_template.html' %}
+
+{% block nav %}
+<ul>
+    <li class="first"><a href="/myadmin">Admin Home</a></li>
+    <li class="first"><a href="/myadmin/manageusers">Manage Users</a></li>
+    <li>
+        <span class="opener">Manage category<b></b></span>
+        <ul>
+            <li><a href="/myadmin/addcategory">Add Category</a></li>
+            <li><a href="/myadmin/addsubcategory">Add SubCategory</a></li>
+        </ul>
+    </li>
+
+    <li class="last"><a href="/login/">Logout</a></li>
+</ul>
+{% endblock nav %}
+{% block slider %}
+<b>Welcome Admin :{{sunm}}</b>  
+{% endblock slider %}
+
+{% block main %}
+<center>
+<h1>Welcome to BidMe</h1>
+<h2>Admin Panel</h2>
+</center>
+{% endblock main %}
+
+
+{% block pagebottom  %}
+
+{% endblock pagebottom %}

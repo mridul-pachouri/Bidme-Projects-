@@ -1,0 +1,22 @@
+{% extends 'master_template.html' %}
+
+{% block content %}
+<div class="box">
+    <h2>Login Here!!!</h2>
+    <font style="font-size: 30px;" color="blue">{{output}}</font>
+    <form method="post" action="/login/">
+    {% csrf_token %}
+    
+    <label for="">Email</label>    
+    <input type="text" name="email" placeholder="Enter Email"/>
+    <br/>
+    
+    <label for="">Password</label>    
+    <input type="password" name="password" placeholder="Enter Password" />
+    <br/>
+    
+    <input type="submit" value="Login"/>
+    
+    </form>
+</div>
+{% endblock content %}

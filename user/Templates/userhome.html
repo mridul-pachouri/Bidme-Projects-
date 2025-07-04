@@ -1,0 +1,24 @@
+{% extends 'master_template.html' %}
+
+{% block nav %}
+<ul>
+    <li class="first"><a href="/user/">User Home</a></li>
+    <li><a href="/user/viewcategory/">Search Product</a></li>
+    <li class="last"><a href="/login/">Logout</a></li>
+</ul>
+{% endblock nav %}
+{% block slider %}
+<b>Welcome user :{{sunm}}</b>
+{% endblock slider %}
+
+{% block main %}
+<center>
+<h1>Welcome to BidMe</h1>
+<h2>User Panel</h2>
+</center>
+{% endblock main %}
+
+
+{% block pagebottom  %}
+
+{% endblock pagebottom %}

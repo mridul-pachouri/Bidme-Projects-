@@ -1,0 +1,29 @@
+{% extends 'adminhome.html' %}
+
+{% block main %}
+<h1>Change Password Here</h1>
+<br/>
+<font style="font-size:20px;" color="sky value"></fontcolor>{{output}}</font>
+
+<form method="post" action="/myadmin/cpadmin/" >
+{% csrf_token %}
+        <label>Old password</label>
+        <br/>
+        <input type="password" name="opassword" placeholder="enter old password"/>
+        <br/>
+        <label> New password</label>
+        <br/>
+        <input type="password" name="npassword" placeholder="enter new password"/>
+        <br/>
+
+        <label> Confirm New password</label>
+        <br/>
+
+        <input type="password" name="cnpassword" placeholder="enter change password"/>
+        <br/>
+
+
+        <input type="submit" value="Change password"/>
+</form>
+
+{% endblock main %}s
